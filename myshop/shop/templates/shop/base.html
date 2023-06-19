@@ -1,0 +1,23 @@
+{& load static &}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{& block title &}My shop{& end block &}</title>
+    <link type="text/css" href="{% static 'shop/css/styles.css' %}" rel="stylesheet" />
+</head>
+<body>
+<div id="header">
+    <a href="/" class="logo">My shop</a>
+</div>
+<div id="subhead-er">
+    <div class="cart">
+        Your cart is empty.
+    </div>
+</div>
+<div id="content">
+    {% block content %}
+    {% end block %}
+</div>
+</body>
+</html>
